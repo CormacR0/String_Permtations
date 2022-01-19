@@ -40,10 +40,11 @@
             // 
             this.TitleTxt.AutoSize = true;
             this.TitleTxt.BackColor = System.Drawing.Color.Tomato;
-            this.TitleTxt.Location = new System.Drawing.Point(344, 97);
+            this.TitleTxt.Location = new System.Drawing.Point(366, 61);
             this.TitleTxt.MaximumSize = new System.Drawing.Size(100, 100);
+            this.TitleTxt.MinimumSize = new System.Drawing.Size(100, 100);
             this.TitleTxt.Name = "TitleTxt";
-            this.TitleTxt.Size = new System.Drawing.Size(81, 13);
+            this.TitleTxt.Size = new System.Drawing.Size(100, 100);
             this.TitleTxt.TabIndex = 1;
             this.TitleTxt.Text = "String comparer";
             // 
