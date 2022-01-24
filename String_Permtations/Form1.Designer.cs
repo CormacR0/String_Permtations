@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.TitleTxt = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.X_Textbx = new System.Windows.Forms.TextBox();
+            this.Y_Textbx = new System.Windows.Forms.TextBox();
             this.String_X_Lbl = new System.Windows.Forms.Label();
             this.String_Y_Lbl = new System.Windows.Forms.Label();
             this.Cal_But = new System.Windows.Forms.Button();
@@ -40,7 +40,7 @@
             // 
             this.TitleTxt.AutoSize = true;
             this.TitleTxt.BackColor = System.Drawing.Color.Tomato;
-            this.TitleTxt.Location = new System.Drawing.Point(347, 64);
+            this.TitleTxt.Location = new System.Drawing.Point(366, 61);
             this.TitleTxt.MaximumSize = new System.Drawing.Size(100, 100);
             this.TitleTxt.MinimumSize = new System.Drawing.Size(100, 100);
             this.TitleTxt.Name = "TitleTxt";
@@ -48,19 +48,21 @@
             this.TitleTxt.TabIndex = 1;
             this.TitleTxt.Text = "String comparer";
             // 
-            // textBox1
+            // X_Textbx
             // 
-            this.textBox1.Location = new System.Drawing.Point(347, 180);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.X_Textbx.Location = new System.Drawing.Point(347, 180);
+            this.X_Textbx.Name = "X_Textbx";
+            this.X_Textbx.Size = new System.Drawing.Size(100, 20);
+            this.X_Textbx.TabIndex = 2;
+            this.X_Textbx.TextChanged += new System.EventHandler(this.X_Textbx_TextChanged);
             // 
-            // textBox2
+            // Y_Textbx
             // 
-            this.textBox2.Location = new System.Drawing.Point(347, 249);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 3;
+            this.Y_Textbx.Location = new System.Drawing.Point(347, 249);
+            this.Y_Textbx.Name = "Y_Textbx";
+            this.Y_Textbx.Size = new System.Drawing.Size(100, 20);
+            this.Y_Textbx.TabIndex = 3;
+            this.Y_Textbx.TextChanged += new System.EventHandler(this.Y_Textbx_TextChanged);
             // 
             // String_X_Lbl
             // 
@@ -88,6 +90,7 @@
             this.Cal_But.TabIndex = 6;
             this.Cal_But.Text = "Calculate";
             this.Cal_But.UseVisualStyleBackColor = true;
+            this.Cal_But.Click += new System.EventHandler(this.Cal_But_Click);
             // 
             // Form1
             // 
@@ -97,8 +100,8 @@
             this.Controls.Add(this.Cal_But);
             this.Controls.Add(this.String_Y_Lbl);
             this.Controls.Add(this.String_X_Lbl);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Y_Textbx);
+            this.Controls.Add(this.X_Textbx);
             this.Controls.Add(this.TitleTxt);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -109,8 +112,8 @@
 
         #endregion
         private System.Windows.Forms.Label TitleTxt;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox X_Textbx;
+        private System.Windows.Forms.TextBox Y_Textbx;
         private System.Windows.Forms.Label String_X_Lbl;
         private System.Windows.Forms.Label String_Y_Lbl;
         private System.Windows.Forms.Button Cal_But;
