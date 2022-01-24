@@ -40,7 +40,7 @@
             // 
             this.TitleTxt.AutoSize = true;
             this.TitleTxt.BackColor = System.Drawing.Color.Tomato;
-            this.TitleTxt.Location = new System.Drawing.Point(366, 61);
+            this.TitleTxt.Location = new System.Drawing.Point(347, 64);
             this.TitleTxt.MaximumSize = new System.Drawing.Size(100, 100);
             this.TitleTxt.MinimumSize = new System.Drawing.Size(100, 100);
             this.TitleTxt.Name = "TitleTxt";
