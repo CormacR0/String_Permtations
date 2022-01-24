@@ -16,25 +16,30 @@ namespace String_Permtations
         {
             InitializeComponent();
         }
-
+        int y_Len = 0;
+        int x_Len = 0;
         private void Y_Textbx_TextChanged(object sender, EventArgs e)
         {
-            string Ycontents = Y_Textbx.Text;
+            y_Len = Y_Textbx.Text.Length;
         }
 
         private void X_Textbx_TextChanged(object sender, EventArgs e)
         {
-            string Xcontents = X_Textbx.Text;
+            x_Len = X_Textbx.Text.Length;
         }
 
         private void Cal_But_Click(object sender, EventArgs e)
         {
-            if ( 0 < Y_Textbx.Text.Length < 1000 && 0 < Ycontents.Length < 1000 )
+            if ( 0 < y_Len && x_Len < 1000 && 1000 > y_Len && x_Len > 0)
             {
+                MessageBox.Show("Valid input");
 
 
 
-
+            }
+            else
+            {
+                MessageBox.Show("Please enter a string between 1 and 1000 characters");
             }
         }
     }
